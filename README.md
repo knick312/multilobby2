@@ -64,7 +64,7 @@ Para licencias comerciales, soporte o consultas, contacta al autor:
 
 ---
 
-*MultiLobby - (c) 2025 TuNombre*  
+*MultiLobby - (c) 2025 TFlores Nicolas Eugenio*  
 *Licencia de código abierto con uso no comercial.*
 
 ---

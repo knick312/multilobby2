@@ -1,0 +1,58 @@
+# // Este plugin está licenciado bajo la Licencia Extendida de Código Abierto con Restricción Comercial.
+# // Consulta el archivo LICENSE-MULTILOBBY.txt incluido en este proyecto para más información.
+
+  #  /*
+  #  * MultiLobby - Copyright (c) 2025 Flores Nicolas Eugenio
+  #  *
+#  * Este software se proporciona bajo una Licencia de Código Abierto con Restricción Comercial.
+#  * Permitido: uso personal, modificación y distribución bajo esta misma licencia.
+#  * Prohibido: uso comercial o redistribución con fines de lucro sin autorización expresa.
+#
+#  * Para detalles completos, consulta el archivo LICENSE-MULTILOBBY.txt o contacta a:
+# * 📧 Flores Nicolas Eugenio.com
+#
+#  */
+  # Configuración general de Lobbys
+
+default-lobby: "lobby"   # Lobby por defecto al entrar al servidor
+
+menu-title: "&6Selecciona un Lobby"
+menu-item:
+  material: "NETHER_STAR"
+  amount: 1
+  slot: 0
+  name: "&bMenú de Lobbys"
+  lore:
+    - "&7Haz clic para abrir el menú de lobbys"
+  size: 27
+
+teleport-title: "&aTeletransportado!"
+teleport-subtitle: "&7Disfruta el servidor"
+title1-fadein: 10
+title2-stay: 70
+title3-fadeout: 20
+teleport-sound: "ENTITY_ENDERMAN_TELEPORT"
+teleport-sound-volume: 1.0
+teleport-sound-pitch: 1.0
+
+join-message: "&e¡Bienvenido {player}!"
+join-sound: "ENTITY_PLAYER_LEVELUP"
+
+# Definición de los lobbys
+lobbys:
+  lobby:
+    world: "world"
+    x: 0.5
+    y: 65.0
+    z: 0.5
+    yaw: 0.0
+    pitch: 0.0
+
+# Ítems del menú para cada lobby
+items:
+  lobby:
+    material: "DIAMOND"
+    name: "&aLobby Principal"
+    lore:
+      - "&7Haz clic para teletransportarte"
+    slot: 10

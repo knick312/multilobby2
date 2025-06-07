@@ -1,0 +1,64 @@
+#* // Este plugin está licenciado bajo la Licencia Extendida de Código Abierto con Restricción Comercial.
+  #*// Consulta el archivo LICENSE-MULTILOBBY.txt incluido en este proyecto para más información.
+
+  #* /*
+  #* * MultiLobby - Copyright (c) 2025 Flores Nicolas Eugenio
+  #* *
+  #** Este software se proporciona bajo una Licencia de Código Abierto con Restricción Comercial.
+  #** Permitido: uso personal, modificación y distribución bajo esta misma licencia.
+    #* * Prohibido: uso comercial o redistribución con fines de lucro sin autorización expresa.
+    #* *
+    #* * Para detalles completos, consulta el archivo LICENSE-MULTILOBBY.txt o contacta a:
+    #* * 📧 Flores Nicolas Eugenio.com
+    #*/
+name: MultiLobby
+version: 1.0
+main: com.tuplugin.Main
+api-version: 1.20
+
+commands:
+  setlobby:
+    description: Establece una ubicación de lobby
+    usage: /setlobby <nombre>
+    permission: lobby.set
+
+  multilobbyreload:
+    description: Recarga la configuración del plugin MultiLobby
+    usage: /multilobbyreload
+    permission: multilobby.reload
+
+  lobby:
+    description: Teletransportarse a un lobby
+    usage: /lobby <nombre>
+    permission: lobby.use
+
+  lobbymenu:
+    description: Abrir menú gráfico de lobbys
+    usage: /lobbymenu
+    permission: lobby.menu
+
+  lobbyconfig:
+    description: Configura el ítem del menú de lobbys
+    usage: /lobbyconfig setitem <material> <nombre_con_guiones> <slot>
+    permission: multilobby.config
+
+permissions:
+  lobby.set:
+    description: Permiso para usar /setlobby
+    default: op
+
+  lobby.use:
+    description: Permiso para usar /lobby
+    default: true
+
+  lobby.menu:
+    description: Permiso para abrir el menú de lobbys
+    default: true
+
+  multilobby.config:
+    description: Permiso para configurar el menú de lobbys
+    default: op
+
+  multilobby.reload:
+    description: Permiso para recargar la configuración del plugin
+    default: op
